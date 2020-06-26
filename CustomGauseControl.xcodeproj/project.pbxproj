@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,12 @@
 		7659334E24A338BD00C8D5AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7659334C24A338BD00C8D5AA /* Main.storyboard */; };
 		7659335024A338C700C8D5AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7659334F24A338C700C8D5AA /* Assets.xcassets */; };
 		7659335324A338C700C8D5AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7659335124A338C700C8D5AA /* LaunchScreen.storyboard */; };
+		7659335B24A3393200C8D5AA /* GaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7659335A24A3393200C8D5AA /* GaugeView.swift */; };
+		8405E2C4E612E6876CDC15B9 /* Pods_CustomGauseControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE2600D68F94BDC804624DD /* Pods_CustomGauseControl.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		240ACB4B1D94A208D6E498D1 /* Pods-CustomGauseControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomGauseControl.debug.xcconfig"; path = "Target Support Files/Pods-CustomGauseControl/Pods-CustomGauseControl.debug.xcconfig"; sourceTree = "<group>"; };
 		7659334324A338BD00C8D5AA /* CustomGauseControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomGauseControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7659334624A338BD00C8D5AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7659334824A338BD00C8D5AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		7659334F24A338C700C8D5AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7659335224A338C700C8D5AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7659335424A338C700C8D5AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7659335A24A3393200C8D5AA /* GaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeView.swift; sourceTree = "<group>"; };
+		9FE2600D68F94BDC804624DD /* Pods_CustomGauseControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomGauseControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E96A1CED628072248697F246 /* Pods-CustomGauseControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomGauseControl.release.xcconfig"; path = "Target Support Files/Pods-CustomGauseControl/Pods-CustomGauseControl.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8405E2C4E612E6876CDC15B9 /* Pods_CustomGauseControl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68E0AA2054619D673366372C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				240ACB4B1D94A208D6E498D1 /* Pods-CustomGauseControl.debug.xcconfig */,
+				E96A1CED628072248697F246 /* Pods-CustomGauseControl.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		74BE1A7CB8DC8FFD364A6D39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FE2600D68F94BDC804624DD /* Pods_CustomGauseControl.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7659333A24A338BD00C8D5AA = {
 			isa = PBXGroup;
 			children = (
 				7659334524A338BD00C8D5AA /* CustomGauseControl */,
 				7659334424A338BD00C8D5AA /* Products */,
+				68E0AA2054619D673366372C /* Pods */,
+				74BE1A7CB8DC8FFD364A6D39 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +89,7 @@
 				7659334F24A338C700C8D5AA /* Assets.xcassets */,
 				7659335124A338C700C8D5AA /* LaunchScreen.storyboard */,
 				7659335424A338C700C8D5AA /* Info.plist */,
+				7659335A24A3393200C8D5AA /* GaugeView.swift */,
 			);
 			path = CustomGauseControl;
 			sourceTree = "<group>";
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7659335724A338C700C8D5AA /* Build configuration list for PBXNativeTarget "CustomGauseControl" */;
 			buildPhases = (
+				799E5EB8FEC8FC3372B44816 /* [CP] Check Pods Manifest.lock */,
 				7659333F24A338BD00C8D5AA /* Sources */,
 				7659334024A338BD00C8D5AA /* Frameworks */,
 				7659334124A338BD00C8D5AA /* Resources */,
+				F10310D3ADC6BA3130DCA115 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +162,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		799E5EB8FEC8FC3372B44816 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomGauseControl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F10310D3ADC6BA3130DCA115 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomGauseControl/Pods-CustomGauseControl-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomGauseControl/Pods-CustomGauseControl-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustomGauseControl/Pods-CustomGauseControl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7659333F24A338BD00C8D5AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +211,7 @@
 			files = (
 				7659334B24A338BD00C8D5AA /* ViewController.swift in Sources */,
 				7659334724A338BD00C8D5AA /* AppDelegate.swift in Sources */,
+				7659335B24A3393200C8D5AA /* GaugeView.swift in Sources */,
 				7659334924A338BD00C8D5AA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +354,7 @@
 		};
 		7659335824A338C700C8D5AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 240ACB4B1D94A208D6E498D1 /* Pods-CustomGauseControl.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +372,7 @@
 		};
 		7659335924A338C700C8D5AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E96A1CED628072248697F246 /* Pods-CustomGauseControl.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
