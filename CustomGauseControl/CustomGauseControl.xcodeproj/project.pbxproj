@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7657E19024AAD854009EB4F4 /* NeedleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7657E18F24AAD854009EB4F4 /* NeedleView.swift */; };
+		7657E19324AB1B3E009EB4F4 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7657E19124AB1B3E009EB4F4 /* ViewController2.swift */; };
+		7657E19424AB1B3E009EB4F4 /* ViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7657E19224AB1B3E009EB4F4 /* ViewController2.xib */; };
+		7659334724A338BD00C8D5AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7659334624A338BD00C8D5AA /* AppDelegate.swift */; };
+		7659334924A338BD00C8D5AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7659334824A338BD00C8D5AA /* SceneDelegate.swift */; };
+		7659334B24A338BD00C8D5AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7659334A24A338BD00C8D5AA /* ViewController.swift */; };
+		7659334E24A338BD00C8D5AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7659334C24A338BD00C8D5AA /* Main.storyboard */; };
+		7659335024A338C700C8D5AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7659334F24A338C700C8D5AA /* Assets.xcassets */; };
+		7659335324A338C700C8D5AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7659335124A338C700C8D5AA /* LaunchScreen.storyboard */; };
+		7659335B24A3393200C8D5AA /* GaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7659335A24A3393200C8D5AA /* GaugeView.swift */; };
+		765966E124A9EF22004DD149 /* CustomGaugeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 765966E024A9EF22004DD149 /* CustomGaugeView.xib */; };
+		765966E324A9EF82004DD149 /* CustomGaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765966E224A9EF82004DD149 /* CustomGaugeView.swift */; };
+		8405E2C4E612E6876CDC15B9 /* Pods_CustomGauseControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE2600D68F94BDC804624DD /* Pods_CustomGauseControl.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		240ACB4B1D94A208D6E498D1 /* Pods-CustomGauseControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomGauseControl.debug.xcconfig"; path = "Target Support Files/Pods-CustomGauseControl/Pods-CustomGauseControl.debug.xcconfig"; sourceTree = "<group>"; };
+		7657E18F24AAD854009EB4F4 /* NeedleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedleView.swift; sourceTree = "<group>"; };
+		7657E19124AB1B3E009EB4F4 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		7657E19224AB1B3E009EB4F4 /* ViewController2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController2.xib; sourceTree = "<group>"; };
+		7659334324A338BD00C8D5AA /* CustomGauseControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomGauseControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7659334624A338BD00C8D5AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7659334824A338BD00C8D5AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7659334A24A338BD00C8D5AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7659334D24A338BD00C8D5AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7659334F24A338C700C8D5AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7659335224A338C700C8D5AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7659335424A338C700C8D5AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7659335A24A3393200C8D5AA /* GaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeView.swift; sourceTree = "<group>"; };
+		765966E024A9EF22004DD149 /* CustomGaugeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomGaugeView.xib; sourceTree = "<group>"; };
+		765966E224A9EF82004DD149 /* CustomGaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGaugeView.swift; sourceTree = "<group>"; };
+		9FE2600D68F94BDC804624DD /* Pods_CustomGauseControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomGauseControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E96A1CED628072248697F246 /* Pods-CustomGauseControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomGauseControl.release.xcconfig"; path = "Target Support Files/Pods-CustomGauseControl/Pods-CustomGauseControl.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7659334024A338BD00C8D5AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8405E2C4E612E6876CDC15B9 /* Pods_CustomGauseControl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68E0AA2054619D673366372C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				240ACB4B1D94A208D6E498D1 /* Pods-CustomGauseControl.debug.xcconfig */,
+				E96A1CED628072248697F246 /* Pods-CustomGauseControl.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		74BE1A7CB8DC8FFD364A6D39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FE2600D68F94BDC804624DD /* Pods_CustomGauseControl.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7659333A24A338BD00C8D5AA = {
+			isa = PBXGroup;
+			children = (
+				7659334524A338BD00C8D5AA /* CustomGauseControl */,
+				7659334424A338BD00C8D5AA /* Products */,
+				68E0AA2054619D673366372C /* Pods */,
+				74BE1A7CB8DC8FFD364A6D39 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7659334424A338BD00C8D5AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7659334324A338BD00C8D5AA /* CustomGauseControl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7659334524A338BD00C8D5AA /* CustomGauseControl */ = {
+			isa = PBXGroup;
+			children = (
+				7659334624A338BD00C8D5AA /* AppDelegate.swift */,
+				7659334824A338BD00C8D5AA /* SceneDelegate.swift */,
+				7659334A24A338BD00C8D5AA /* ViewController.swift */,
+				7657E19124AB1B3E009EB4F4 /* ViewController2.swift */,
+				7657E19224AB1B3E009EB4F4 /* ViewController2.xib */,
+				765966E024A9EF22004DD149 /* CustomGaugeView.xib */,
+				765966E224A9EF82004DD149 /* CustomGaugeView.swift */,
+				7659334C24A338BD00C8D5AA /* Main.storyboard */,
+				7659334F24A338C700C8D5AA /* Assets.xcassets */,
+				7659335124A338C700C8D5AA /* LaunchScreen.storyboard */,
+				7659335424A338C700C8D5AA /* Info.plist */,
+				7659335A24A3393200C8D5AA /* GaugeView.swift */,
+				7657E18F24AAD854009EB4F4 /* NeedleView.swift */,
+			);
+			path = CustomGauseControl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7659334224A338BD00C8D5AA /* CustomGauseControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7659335724A338C700C8D5AA /* Build configuration list for PBXNativeTarget "CustomGauseControl" */;
+			buildPhases = (
+				799E5EB8FEC8FC3372B44816 /* [CP] Check Pods Manifest.lock */,
+				7659333F24A338BD00C8D5AA /* Sources */,
+				7659334024A338BD00C8D5AA /* Frameworks */,
+				7659334124A338BD00C8D5AA /* Resources */,
+				F10310D3ADC6BA3130DCA115 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomGauseControl;
+			productName = CustomGauseControl;
+			productReference = 7659334324A338BD00C8D5AA /* CustomGauseControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7659333B24A338BD00C8D5AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = NBN;
+				TargetAttributes = {
+					7659334224A338BD00C8D5AA = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 7659333E24A338BD00C8D5AA /* Build configuration list for PBXProject "CustomGauseControl" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7659333A24A338BD00C8D5AA;
+			productRefGroup = 7659334424A338BD00C8D5AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7659334224A338BD00C8D5AA /* CustomGauseControl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7659334124A338BD00C8D5AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7657E19424AB1B3E009EB4F4 /* ViewController2.xib in Resources */,
+				7659335324A338C700C8D5AA /* LaunchScreen.storyboard in Resources */,
+				7659335024A338C700C8D5AA /* Assets.xcassets in Resources */,
+				7659334E24A338BD00C8D5AA /* Main.storyboard in Resources */,
+				765966E124A9EF22004DD149 /* CustomGaugeView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		799E5EB8FEC8FC3372B44816 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomGauseControl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F10310D3ADC6BA3130DCA115 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomGauseControl/Pods-CustomGauseControl-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomGauseControl/Pods-CustomGauseControl-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustomGauseControl/Pods-CustomGauseControl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7659333F24A338BD00C8D5AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7657E19324AB1B3E009EB4F4 /* ViewController2.swift in Sources */,
+				7659334B24A338BD00C8D5AA /* ViewController.swift in Sources */,
+				7657E19024AAD854009EB4F4 /* NeedleView.swift in Sources */,
+				7659334724A338BD00C8D5AA /* AppDelegate.swift in Sources */,
+				7659335B24A3393200C8D5AA /* GaugeView.swift in Sources */,
+				765966E324A9EF82004DD149 /* CustomGaugeView.swift in Sources */,
+				7659334924A338BD00C8D5AA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7659334C24A338BD00C8D5AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7659334D24A338BD00C8D5AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7659335124A338C700C8D5AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7659335224A338C700C8D5AA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7659335524A338C700C8D5AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7659335624A338C700C8D5AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7659335824A338C700C8D5AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 240ACB4B1D94A208D6E498D1 /* Pods-CustomGauseControl.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CustomGauseControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = demo.CustomGauseControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7659335924A338C700C8D5AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E96A1CED628072248697F246 /* Pods-CustomGauseControl.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CustomGauseControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = demo.CustomGauseControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7659333E24A338BD00C8D5AA /* Build configuration list for PBXProject "CustomGauseControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7659335524A338C700C8D5AA /* Debug */,
+				7659335624A338C700C8D5AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7659335724A338C700C8D5AA /* Build configuration list for PBXNativeTarget "CustomGauseControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7659335824A338C700C8D5AA /* Debug */,
+				7659335924A338C700C8D5AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7659333B24A338BD00C8D5AA /* Project object */;
+}

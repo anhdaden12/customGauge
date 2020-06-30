@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController2" customModule="CustomGauseControl" customModuleProvider="target">
+            <connections>
+                <outlet property="progressbarview" destination="AJs-ya-0kU" id="wRJ-hn-la9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AJs-ya-0kU" customClass="CustomGaugeView" customModule="CustomGauseControl" customModuleProvider="target">
+                    <rect key="frame" x="57" y="64" width="300" height="300"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="JMQ-YZ-QqG"/>
+                        <constraint firstAttribute="height" constant="300" id="jAF-Gc-Tzw"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOT-28-HeA">
+                    <rect key="frame" x="105" y="768" width="204" height="74"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="204" id="2HO-kM-3nA"/>
+                        <constraint firstAttribute="height" constant="74" id="zlg-kL-axo"/>
+                    </constraints>
+                    <state key="normal" title="onlci"/>
+                    <connections>
+                        <action selector="onclickchangeWithSender:" destination="-1" eventType="touchUpInside" id="zZM-bM-v2z"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="dOT-28-HeA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9o6-OL-odZ"/>
+                <constraint firstItem="AJs-ya-0kU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DIT-sg-nbo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dOT-28-HeA" secondAttribute="bottom" constant="20" id="gHw-aP-CT6"/>
+                <constraint firstItem="AJs-ya-0kU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="yAz-Dk-zwP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </view>
+    </objects>
+</document>

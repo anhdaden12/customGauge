@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomGauseControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYI-Wz-en4">
+                                <rect key="frame" x="30" y="523" width="354" height="50"/>
+                                <color key="backgroundColor" red="0.88235294119999996" green="1" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="C6P-PO-xXo"/>
+                                </constraints>
+                                <state key="normal" title="Onclick to change value">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickchangevalue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mMJ-ca-JNz"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8du-zk-Jpd">
+                                <rect key="frame" x="30" y="468" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DwT-DP-s8n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3kt-XW-yYq" customClass="MBCircularProgressBarView">
+                                <rect key="frame" x="57" y="64" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="7f2-gm-h7O"/>
+                                    <constraint firstAttribute="width" secondItem="3kt-XW-yYq" secondAttribute="height" id="hXe-KX-2gw"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showValueString" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="decimalPlaces">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showUnitString" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                        <color key="value" red="0.0" green="0.69411764705882351" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="emptyLineWidth">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="emptyCapType">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="unitFontSize">
+                                        <real key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="textOffset">
+                                        <point key="value" x="8" y="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="unitString" value=" "/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressCapType">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressLineWidth">
+                                        <real key="value" value="23"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressStrokeColor">
+                                        <color key="value" red="0.0" green="0.69707435200000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpb-QX-2gD">
+                                <rect key="frame" x="184" y="583" width="46" height="30"/>
+                                <state key="normal" title="Show anotherview"/>
+                                <connections>
+                                    <action selector="showViewcontroller:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kiv-fd-JPh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BYI-Wz-en4" secondAttribute="trailing" constant="30" id="8Jk-Ft-vsf"/>
+                            <constraint firstItem="qpb-QX-2gD" firstAttribute="width" secondItem="BYI-Wz-en4" secondAttribute="width" multiplier="0.129944" id="FWV-GU-3OD"/>
+                            <constraint firstItem="BYI-Wz-en4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G3d-vn-lyb"/>
+                            <constraint firstItem="BYI-Wz-en4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="NCW-9f-A2E"/>
+                            <constraint firstItem="8du-zk-Jpd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="azM-gs-mn1"/>
+                            <constraint firstItem="3kt-XW-yYq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="ctQ-mp-S5D"/>
+                            <constraint firstItem="qpb-QX-2gD" firstAttribute="top" secondItem="BYI-Wz-en4" secondAttribute="bottom" constant="10" id="fSF-7C-hou"/>
+                            <constraint firstItem="3kt-XW-yYq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gV9-kN-dXv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8du-zk-Jpd" secondAttribute="trailing" constant="30" id="lZG-cp-pSh"/>
+                            <constraint firstItem="qpb-QX-2gD" firstAttribute="height" secondItem="BYI-Wz-en4" secondAttribute="height" multiplier="0.6" id="pMG-LG-R17"/>
+                            <constraint firstItem="qpb-QX-2gD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tjb-fw-7AT"/>
+                            <constraint firstItem="BYI-Wz-en4" firstAttribute="top" secondItem="8du-zk-Jpd" secondAttribute="bottom" constant="5" id="vmM-SW-aVp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="progressBarView" destination="3kt-XW-yYq" id="5bE-ed-637"/>
+                        <outlet property="valueTextfield" destination="8du-zk-Jpd" id="776-bg-sMn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-104.34782608695653" y="-60.267857142857139"/>
+        </scene>
+    </scenes>
+</document>
